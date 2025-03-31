@@ -1,0 +1,124 @@
+/* Reset CSS */
+body, h1, p, div, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to enhance text visibility */
+    color: white;
+    text-align: center;
+    position: relative; /* To position the background image within the header */
+}
+
+/* Styling for the header title */
+header h1 {
+    background-image: url('background.png'); /* Add background image to h1 */
+    background-repeat: repeat; /* Repeat the background image */
+    background-size: auto; /* Maintain original size of the image */
+    background-position: top left; /* Align the image to the top-left corner */
+    color: white; /* Make sure the text is visible on the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add text shadow for better visibility */
+}
+
+
+/* Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid-item input {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Button layout - Align "On" and "Off" buttons on the same row */
+.grid-item button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Buttons in horizontal row */
+.grid-item .button-row {
+    display: flex;
+    gap: 10px;  /* Add space between buttons */
+}
+
+/* Button colors */
+.grid-item .btn-on {
+    background-color: blue;
+    color: white;
+}
+
+.grid-item .btn-off {
+    background-color: #ffcccc;
+    color: black;
+}
+
+/* Hover effects for "On" and "Off" buttons */
+.grid-item .btn-on:hover {
+    background-color: darkblue;  /* Darken the blue when hovered */
+    transform: scale(1.1);  /* Slightly enlarge the button */
+}
+
+.grid-item .btn-off:hover {
+    background-color: #ff9999;  /* Lighten the red when hovered */
+    transform: scale(1.1);  /* Slightly enlarge the button */
+}
+
+/* Link styling */
+.grid-item a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.grid-item a:hover {
+    color: darkblue;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

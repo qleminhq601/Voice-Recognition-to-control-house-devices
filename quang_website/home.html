@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIKA-WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include MQTT.js library (only one version) -->
+    <script src="dist/bundle.js"></script>
+</head>
+<body>
+    <header>
+        <h1>MAIKA-WEBSITE</h1>
+    </header>
+    <main class="grid-container">
+        <!-- First Row -->
+        <div class="grid-item">
+            <p>Temperature</p> <!-- Label for temperature -->
+            <img src="temperature.png" alt="Temperature">
+            <p id="temperature">25°C</p> <!-- Display temperature -->
+        </div>
+        <div class="grid-item">
+            <p>Humidity</p> <!-- Label for humidity -->
+            <img src="humidity.png" alt="Humidity">
+            <p id="humidity">60%</p> <!-- Display humidity -->
+        </div>
+        <div class="grid-item">
+            <p>Gas</p> <!-- Label for gas -->
+            <img src="gas.png" alt="Gas">
+            <p id="gas">400 ppm</p> <!-- Display gas level -->
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid-item">
+            <img src="light-off.png" alt="Light">
+            <div class="button-row">
+                <button class="btn-on">ON</button>
+                <button class="btn-off">OFF</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="fan-off.png" alt="Fan">
+            <div class="button-row">
+                <button class="btn-on">ON</button>
+                <button class="btn-off">OFF</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <!-- Embed YouTube video -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/t7tZFq29lis?list=RDrDpJfmBI9xQ&index=19" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 My Website</p>
+    </footer>
+
+    <!-- Include the separate JS file -->
+     
+    <script type="module" src="index.js"></script>
+</body>
+</html>
