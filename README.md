@@ -1,6 +1,6 @@
 # Voice Recognition to Control House Devices
 
-This project allows controlling home appliances using voice commands. It includes firmware for ESP32, a PyQt Appoice Recognition to Control House Devices
+This project allows controlling home appliances using voice commands. It includes firmware for ESP32, a PyQt App Voice Recognition to Control House Devices
 
 This project allows controlling home appliances using voice commands. It includes firmware for ESP32, a PyQt App, and a simple web interface.
 
@@ -16,7 +16,7 @@ This project allows controlling home appliances using voice commands. It include
 ## How to run
 
 1. Flash the ESP32 code using Arduino IDE.
-2. Open the app and connect to ESP32.
+2. Open the PyQt app and connect to ESP32.
 3. Give voice commands like "turn on light" or "turn off fan".
 4. Web interface can be hosted locally or on Firebase.
 
