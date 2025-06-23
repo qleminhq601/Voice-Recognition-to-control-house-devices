@@ -9,7 +9,7 @@ This project allows controlling home appliances using voice commands. It include
 | Folder | Description |
 |--------|-------------|
 | `ESP32_Code/` | Firmware for ESP32, integrates with voice module and relays |
-| `PyQt_App/` | And app provides interfaces for user to  |
+| `PyQt_App/` | And app provides interfaces for user to record the voices |
 | `TFT_Display/` | Code for displaying info on TFT screen |
 | `Web_Client/` | Website interface to control or view status of devices |
 
